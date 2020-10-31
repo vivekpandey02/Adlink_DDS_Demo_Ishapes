@@ -55,7 +55,6 @@ To build the demo you need to have installed a QT5 development environment. The 
 
 then you should need to simply do the following from the iShape demo root directory:
 
-      $ "<install-location>"\release.bat 
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
       $ cmake .. -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
       $ cmake --build . --config Debug --target install  
