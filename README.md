@@ -120,8 +120,8 @@ Where <install-location> is the location of Cyclone DDS C++ package
 ### Windows:
 ospl_demo_ishapes is intalled in <install-location>/bin directory of Eclipse Cyclone installation. To run it  you should need to simply do the following:  
       
-      C:\> start <install-location>/bin/cyclone_demo_ishapes  
-      C:\> start <install-location>/bin/cyclone_demo_ishapes  
+      C:\> start <install-location>\bin\cyclone_demo_ishapes  
+      C:\> start <install-location>\bin\cyclone_demo_ishapes  
   
 Where <install-location> is the location of Cyclone DDS C++ package  
 
