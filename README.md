@@ -39,7 +39,7 @@ To build the iShapes demo you need to have installed a QT5 development environme
 then you should need to simply do the following from the iShape demo root directory:
 
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
-      $ cmake -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
+      $ cmake .. -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
       $ cmake --build . --config Release --target install  
       
       Where <install-location> is the location of Cyclone DDS C++ package  
@@ -57,7 +57,7 @@ then you should need to simply do the following from the iShape demo root direct
 
       $ "<install-location>"\release.bat 
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
-      $ cmake -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
+      $ cmake .. -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
       $ cmake --build . --config Debug --target install  
       
       Where <install-location> is the location of the Cyclone DDS C++ package  
@@ -76,7 +76,7 @@ then you should need to simply do the following from the iShape demo root direct
 
       $ source <install-location>/release.com  
       $ mkdir ospl_demo_ishapes && cd ospl_demo_ishapes  
-      $ cmake -DADLINK_DDS_PRODUCT=Ospl  
+      $ cmake .. -DADLINK_DDS_PRODUCT=Ospl  
       $ cmake --build . --config Release --target install  
       
       Where <install-location> is the location of Opensplice DDS Home directory.e. The corresponding Opensplice environment variable is OSPL_HOME. 
