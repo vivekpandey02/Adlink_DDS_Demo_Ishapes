@@ -65,7 +65,7 @@ file(GLOB all_SRCS
         "${PROJECT_SOURCE_DIR}/*.cpp"
         )
 
-set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}")
+#set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}")
 
 if(${ADLINK_DDS_PRODUCT} MATCHES "Ospl")
 
@@ -104,7 +104,8 @@ if(${ADLINK_DDS_PRODUCT} MATCHES "Ospl")
 
 	set_property(TARGET ospl_demo_ishapes PROPERTY CXX_STANDARD 11)
 
-	install(TARGETS ospl_demo_ishapes RUNTIME DESTINATION bin)
+        install(TARGETS ospl_demo_ishapes RUNTIME DESTINATION "$ENV{OSPL_HOME}/bin")
+        install(TARGETS ospl_demo_ishapes RUNTIME DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
 
 elseif(${ADLINK_DDS_PRODUCT} MATCHES "Cyclone")
@@ -129,7 +130,8 @@ elseif(${ADLINK_DDS_PRODUCT} MATCHES "Cyclone")
 
 	set_property(TARGET cyclone_demo_ishapes PROPERTY CXX_STANDARD 11)
 
-	install(TARGETS cyclone_demo_ishapes  RUNTIME DESTINATION bin)
+	install(TARGETS cyclone_demo_ishapes RUNTIME DESTINATION "${CYCLONE_INSTALLED_DIR}/bin")
+	install(TARGETS cyclone_demo_ishapes RUNTIME DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 else()
 	set(error
         "ADLINK_DDS_PRODUCT is wrong. Please pass the correct value. Expected value is Ospl/ Cyclone")
