@@ -3,7 +3,7 @@ if(NOT DEFINED ADLINK_DDS_PRODUCT)
         "ADLINK_DDS_PRODUCT not defined. Please set -DADLINK_DDS_PRODUCT=Ospl/Cyclone")
     message(FATAL_ERROR ${error})
 else()
-	message(STATUS "-- -DADLINK_DDS_PRODUCT = ${ADLINK_DDS_PRODUCT}")
+	message(STATUS "-DADLINK_DDS_PRODUCT = ${ADLINK_DDS_PRODUCT}")
 
 	add_definitions(-D"${ADLINK_DDS_PRODUCT}")
 
@@ -27,7 +27,7 @@ else()
 			message(FATAL_ERROR ${error})
 
 		else()
-			message(STATUS "-- -DCYCLONE_INSTALLED_DIR = ${CYCLONE_INSTALLED_DIR}")
+			message(STATUS "-DCYCLONE_INSTALLED_DIR = ${CYCLONE_INSTALLED_DIR}")
 			
 		endif()
 
