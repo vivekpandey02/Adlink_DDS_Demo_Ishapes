@@ -30,13 +30,13 @@ To obtain the ishape demo application, do
 ## Building Cyclone DDS iShapes
 
 ### Building on Linux with cmake
-To build the demo you need to have installed a QT5 development environment. 
+To build the iShapes demo you need to have installed a QT5 development environment. The following QT5 environment variables has to be set in order to build and run ishapes:
       
       $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<install-location>
       
        Where <install-location> is the installation directory of your QT5 installation , e.g (/usr/lib/x86_64_linux-gnu/qt5)  
 
-then you should need to simply do the following:
+then you should need to simply do the following from the iShape demo root directory:
 
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
       $ cmake -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
@@ -45,8 +45,7 @@ then you should need to simply do the following:
       Where <install-location> is the location of Cyclone DDS C++ package  
 
 ### Building on Windows with cmake
-To build the demo you need to have installed a QT5 development environment. 
-The following QT5 environment variables has to be set in order to build and run ishapes:
+To build the demo you need to have installed a QT5 development environment. The following QT5 environment variables has to be set in order to build and run ishapes:
 
       C:\> set QTDIR=<QT5-INSTALLATION-DIR> 
       C:\> set QT_PLUGIN_PATH=<QT5-INSTALLATION-DIR>\plugins  
@@ -54,7 +53,7 @@ The following QT5 environment variables has to be set in order to build and run 
       
       Where is the installation directory of your QT5 installation , e.g (<C:\Qt\5.7.1> )  
 
-To build iShape application you should need to simply do the following:
+then you should need to simply do the following from the iShape demo root directory:
 
       $ "<install-location>"\release.bat 
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
@@ -67,7 +66,13 @@ To build iShape application you should need to simply do the following:
 
 ### Building on Linux with cmake
 
-To build the demo you need to have installed a QT5 development environment. Assuming that this is the case, then you should need to simply do the following:
+To build the iShapes demo you need to have installed a QT5 development environment. The following QT5 environment variables has to be set in order to build and run ishapes:
+      
+      $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<install-location>
+      
+       Where <install-location> is the installation directory of your QT5 installation , e.g (/usr/lib/x86_64_linux-gnu/qt5)  
+
+then you should need to simply do the following from the iShape demo root directory:
 
       $ source <install-location>/release.com  
       $ mkdir ospl_demo_ishapes && cd ospl_demo_ishapes  
@@ -87,7 +92,7 @@ To build the demo you need to have installed a QT5 development environment.  The
       
       Where is the installation directory of your QT5 installation , e.g (<C:\Qt\5.7.1> )  
 
-To build iShape application you should need to simply do the following:
+then you should need to simply do the following from the iShape demo root directory:
 
       $ "<install-location>"\release.bat  
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
@@ -105,7 +110,7 @@ image-20201022104103958
 
 ## Running Cyclone DDS iShapes
 ### Linux:
-cyclone_demo_ishapes is intalled in <install-location>/bin folder of Eclipse Cyclone installation. To run it  you should need to simply do the following:
+cyclone_demo_ishapes is intalled in <install-location>/bin directory of Eclipse Cyclone installation. To run it  you should need to simply do the following:
 
       $ cyclone_demo_ishapes &  
       $ cyclone_demo_ishapes &  
@@ -113,7 +118,7 @@ cyclone_demo_ishapes is intalled in <install-location>/bin folder of Eclipse Cyc
 Where <install-location> is the location of Cyclone DDS C++ package  
 
 ### Windows:
-ospl_demo_ishapes is intalled in <install-location>/bin folder of Eclipse Cyclone installation. To run it  you should need to simply do the following:  
+ospl_demo_ishapes is intalled in <install-location>/bin directory of Eclipse Cyclone installation. To run it  you should need to simply do the following:  
       
       C:\> start cyclone_demo_ishapes  
       C:\> start cyclone_demo_ishapes  
@@ -122,7 +127,7 @@ Where <install-location> is the location of Cyclone DDS C++ package
 
 ## Running Opensplice DDS iShapes
 ### Linux:
-ospl_demo_ishapes is available in <installation>/bin folder of Opensplice DDS installation directory. To run it  you should need to simply do the following: 
+ospl_demo_ishapes is available in <installation>/bin directory of Opensplice DDS installation directory. To run it you should need to simply do the following: 
 
       $ source <install-location>/release.com
       $ ospl_demo_ishapes &
