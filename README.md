@@ -112,16 +112,16 @@ image-20201022104103958
 ### Linux:
 cyclone_demo_ishapes is intalled in <install-location>/bin directory of Eclipse Cyclone installation. To run it  you should need to simply do the following:
 
-      $ cyclone_demo_ishapes &  
-      $ cyclone_demo_ishapes &  
+      $ <install-location>/bin/cyclone_demo_ishapes &  
+      $ <install-location>/bin/cyclone_demo_ishapes &  
   
 Where <install-location> is the location of Cyclone DDS C++ package  
 
 ### Windows:
 ospl_demo_ishapes is intalled in <install-location>/bin directory of Eclipse Cyclone installation. To run it  you should need to simply do the following:  
       
-      C:\> start cyclone_demo_ishapes  
-      C:\> start cyclone_demo_ishapes  
+      C:\> start <install-location>/bin/cyclone_demo_ishapes  
+      C:\> start <install-location>/bin/cyclone_demo_ishapes  
   
 Where <install-location> is the location of Cyclone DDS C++ package  
 
@@ -130,14 +130,14 @@ Where <install-location> is the location of Cyclone DDS C++ package
 ospl_demo_ishapes is available in <installation>/bin directory of Opensplice DDS installation directory. To run it you should need to simply do the following: 
 
       $ source <install-location>/release.com
-      $ ospl_demo_ishapes &
-      $ ospl_demo_ishapes &
+      $ <install-location>/bin/ospl_demo_ishapes &
+      $ <install-location>/bin/ospl_demo_ishapes &
   
       Where <install-location> is the location of Opensplice DDS Home directory.
 
 ### Windows:
       $ "<install-location>"\release.bat 
-      C:\> start ospl_demo_ishapes  
-      C:\> start ospl_demo_ishapes  
+      C:\> start <install-location>\bin\ospl_demo_ishapes  
+      C:\> start <install-location>\bin\ospl_demo_ishapes  
       
       Where <install-location> is the location of Opensplice DDS Home directory.
