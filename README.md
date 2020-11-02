@@ -113,9 +113,9 @@ image-20201022104103958
 To build the iShapes demo you need to have set the Cyclone DDS lib to the LD_LIBRARY_PATH. The following Cyclone environment variables has to be set in order to run ishapes:
       
 
-$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<install-location>/lib
+      $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<install-location>/lib
   
-   Where <install-location> is the location of Cyclone DDS C++ package. 
+      Where <install-location> is the location of Cyclone DDS C++ package. 
 
 
 cyclone_demo_ishapes is intalled in <install-location>/bin directory of Eclipse Cyclone installation. To run it  you should need to simply do the following:
