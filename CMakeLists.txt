@@ -32,11 +32,13 @@ else()
 		endif()
 
 	elseif(${ADLINK_DDS_PRODUCT} MATCHES "Ospl")
-		if($ENV{OSPL_HOME} STREQUAL "")
+		if(NOT DEFINED ENV{OSPL_HOME})
 			set(error
         			"OSPL_HOME not specified. Please set the Opensplice environemt variables by"
 				" source release.sh/release.bash file")
 			message(FATAL_ERROR ${error})
+		else()
+			message(STATUS "OSPL_HOME = $ENV{OSPL_HOME}")
 		endif()
 	else()
 		set(error
