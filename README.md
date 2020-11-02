@@ -43,6 +43,8 @@ then you should need to simply do the following from the iShape demo root direct
       $ cmake --build . --config Release --target install  
       
       Where <install-location> is the location of Cyclone DDS C++ package  
+      
+     Note: please use '--config Debug' if you are using Cyclone DDS debug build to build this iShape application.
 
 ### Building on Windows with cmake
 To build the demo you need to have installed a QT5 development environment. The following QT5 environment variables has to be set in order to build and run ishapes:
@@ -57,9 +59,11 @@ then you should need to simply do the following from the iShape demo root direct
 
       $ mkdir cyclone_demo_ishapes && cd cyclone_demo_ishapes  
       $ cmake .. -DADLINK_DDS_PRODUCT=Cyclone -DCYCLONE_INSTALLED_DIR="<install-location>"  
-      $ cmake --build . --config Debug --target install  
+      $ cmake --build . --config Release --target install  
       
       Where <install-location> is the location of the Cyclone DDS C++ package  
+      
+      Note: please use '--config Debug' if you are using Cyclone DDS debug build to build this iShape application.
 
 ## Building Opensplice DDS iShapes
 
@@ -79,8 +83,9 @@ then you should need to simply do the following from the iShape demo root direct
       $ cmake --build . --config Release --target install  
       
       Where <install-location> is the location of Opensplice DDS Home directory.e. The corresponding Opensplice environment variable is OSPL_HOME. 
+      
+      Note: please use '--config Debug' if you are using Opensplice DDS debug build to build this iShape application.
   
-
 ### Building on Windows with cmake
 To build the demo you need to have installed a QT5 development environment.  The following QT5 environment variables has to be set in order to build and run ishapes:
 
@@ -99,7 +104,9 @@ then you should need to simply do the following from the iShape demo root direct
       $ cmake --build . --config Release --target install  
       
       Where <install-location> is the location of Opensplice DDS Home directory.  
-
+      
+      Note: please use '--config Debug' if you are using Opensplice DDS debug build to build this iShape application.
+      
 
 # Running iShapes
 
